@@ -46,4 +46,9 @@ public class stepdDefs {
     public void user_fill_location_as(String location) {
         homePageSteps.fillLocationInfo(location);
     }
+
+    @When("user select filter as {string} on Filter Page")
+    public void user_select_filter_as_on_Filter_Page(String filterName) {
+        homePageSteps.selectFilterOnFilterBar(filterName);
+    }
 }

@@ -24,4 +24,8 @@ public class HomePageSteps extends HomePage {
         locationInput.sendKeys(location);
         locationInput.sendKeys(Keys.ENTER);
     }
+
+    public void selectFilterOnFilterBar(String filterName) {
+        Driver.get().findElement(By.xpath("//button[contains(@aria-label,'"+filterName+" filter')]")).click();
+    }
 }

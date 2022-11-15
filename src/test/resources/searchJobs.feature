@@ -7,3 +7,4 @@ Feature: Search Jobs
     And user navigate jobs page
     And user search for jobs which is "qa engineer"
     And user fill location as "United States"
+    And user select filter as "Easy Apply" on Filter Page
