@@ -15,8 +15,6 @@ public class stepdDefs {
 
     LoginPageSteps loginPageSteps=new LoginPageSteps();
     HomePageSteps homePageSteps=new HomePageSteps();
-    FilterPageSteps filterPageSteps=new FilterPageSteps();
-    ResultsPage resultsPage=new ResultsPage();
 
     @Given("user navigate login page")
     public void user_navigate_login_page() {
