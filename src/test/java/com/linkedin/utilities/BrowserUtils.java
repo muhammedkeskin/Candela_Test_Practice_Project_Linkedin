@@ -82,6 +82,7 @@ public class BrowserUtils {
         }
     }
 
+
     /**
      * Waits for the provided element to be visible on the page
      *

@@ -20,4 +20,7 @@ public class HomePage extends BrowserUtils {
 
     @FindBy(xpath = "//*[contains(@id,'jobs-search-box-location-id-ember')]")
     public WebElement locationInput;
+
+    @FindBy(xpath = "//button[contains(@aria-label,'Easy Apply filter')]")
+    public WebElement easyApplyFilterButton;
 }

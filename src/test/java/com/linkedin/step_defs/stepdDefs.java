@@ -49,4 +49,11 @@ public class stepdDefs {
     public void user_select_filter_as_on_Filter_Page(String filterName) {
         homePageSteps.selectFilterOnFilterBar(filterName);
     }
+
+    @Then("user check results are filtered by {string} on Filter Page")
+    public void user_check_results_are_filtered_by_on_Filter_Page(String filterName) {
+        homePageSteps.checkIfFilteredByFilterbar(filterName);
+    }
+
+
 }
