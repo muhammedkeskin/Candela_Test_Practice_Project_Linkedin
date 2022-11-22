@@ -14,16 +14,6 @@ import org.junit.runner.RunWith;
         glue = "com/vytrack/step_definitions",//steps ile bağlantı kurar
         dryRun = false, //execute yapmadan atlamak için stue yap. hızlı git
         tags = "@wip"//yazmazsak hepsini run yapar, yazarsak sadece onulogin"
-//ikisinden birini içerenler için: "@login or sales_manager
-//old version: "@login, @sales_manager" -->5den sonrasında çalışmıyor
-
-//ikisini birden içeren: "@login and VYT-123"
-//old version: {"@login","@VYT-123"}
-
-//exclude yapmak için: "@login and not @wip"(work in proces)
-//old version: {"@login", "~@VYT-123"} -->yeni versionda çalışıyor
 )
-
-
 public class CukesRunner {
 }
