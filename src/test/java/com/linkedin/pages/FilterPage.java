@@ -29,4 +29,13 @@ public class FilterPage extends BrowserUtils {
 
     @FindBy(xpath = "(//a[@class='disabled ember-view job-card-container__link job-card-list__title'])[2]")
     public WebElement firstJob;
+
+    @FindBy(xpath = "//button[text()='All filters']")
+    public WebElement allFilterButton;
+
+    @FindBy(css = "#advanced-filter-timePostedRange-r86400")
+    public WebElement PastHours;
+
+    @FindBy(xpath = "//button[contains(@aria-label,'Apply current filters to show')]")
+    public WebElement results;
 }

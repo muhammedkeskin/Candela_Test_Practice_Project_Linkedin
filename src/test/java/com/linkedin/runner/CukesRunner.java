@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",//features ile bağlantı kurar
         glue = "com/vytrack/step_definitions",//steps ile bağlantı kurar
         dryRun = false, //execute yapmadan atlamak için stue yap. hızlı git
-        tags = "@wip"//yazmazsak hepsini run yapar, yazarsak sadece onulogin"
+        tags = "@wip"//yazmazsak hepsini run yapar, yazarsak sadece yazdığımız tagı"
 )
 public class CukesRunner {
 }

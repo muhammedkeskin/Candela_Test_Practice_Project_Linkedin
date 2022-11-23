@@ -9,3 +9,6 @@ Feature: Search Jobs
     And user fill location as "United States"
     And user select filter as "Easy Apply" on Filter Page
     Then user check results are filtered by "Easy Apply" on Filter Page
+    When user filter with all filters
+
+

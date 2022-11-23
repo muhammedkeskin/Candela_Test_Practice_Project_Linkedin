@@ -5,13 +5,21 @@ import com.linkedin.pages.FilterPage;
 public class FilterPageSteps extends FilterPage {
 
 
-    public FilterPageSteps clickAllFiltersButton() throws InterruptedException {
-        waitForPageToLoad(10);
-        waitForVisibility(allFiltersButton,20);
-        allFiltersButton.click();
-        urlContains("www.google.com");
+    public FilterPageSteps clickAllFiltersButton() {
+        allFilterButton.click();
         return this;
     }
+
+    public FilterPageSteps selectLastDay() {
+        PastHours.click();
+        return this;
+    }
+
+    public FilterPageSteps clickResultButton() {
+        results.click();
+        return this;
+    }
+
     public FilterPage selectSortAsMostRecent() throws InterruptedException {
         wait(2);
         waitForVisibility(sortbyMostRecent,10);

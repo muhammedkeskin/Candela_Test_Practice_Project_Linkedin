@@ -1,6 +1,5 @@
 package com.linkedin.step_defs;
 
-import com.linkedin.pages.ResultsPage;
 import com.linkedin.steps.FilterPageSteps;
 import com.linkedin.steps.HomePageSteps;
 import com.linkedin.steps.LoginPageSteps;
@@ -15,6 +14,7 @@ public class stepdDefs {
 
     LoginPageSteps loginPageSteps=new LoginPageSteps();
     HomePageSteps homePageSteps=new HomePageSteps();
+    FilterPageSteps filterPageSteps=new FilterPageSteps();
 
     @Given("user navigate login page")
     public void user_navigate_login_page() {
@@ -55,5 +55,10 @@ public class stepdDefs {
         homePageSteps.checkIfFilteredByFilterbar(filterName);
     }
 
-
+    @When("user filter with all filters")
+    public void user_filter_with_all_filters() {
+        filterPageSteps.clickAllFiltersButton()
+            .selectLastDay()
+            .clickResultButton();
+    }
 }
