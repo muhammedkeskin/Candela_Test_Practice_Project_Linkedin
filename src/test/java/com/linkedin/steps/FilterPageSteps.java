@@ -6,49 +6,25 @@ public class FilterPageSteps extends FilterPage {
 
 
     public FilterPageSteps clickAllFiltersButton() {
+        waitForPageToLoad(10);
+        waitForVisibility(allFiltersButton,20);
         allFilterButton.click();
         return this;
     }
 
-    public FilterPageSteps selectLastDay() {
-        PastHours.click();
-        return this;
-    }
-
-    public FilterPageSteps clickResultButton() {
-        results.click();
-        return this;
-    }
-
-    public FilterPage selectSortAsMostRecent() throws InterruptedException {
-        wait(2);
-        waitForVisibility(sortbyMostRecent,10);
-        sortbyMostRecent.click();
-        return this;
-    }
-    public FilterPageSteps selectPast24Hours() throws InterruptedException {
-        waitForVisibility(Past24Hours,10);
+    public FilterPageSteps selectPast24Hours() {
+        waitFor(2);
         Past24Hours.click();
         return this;
     }
 
-    public FilterPageSteps filterAsUnder10Applicants() throws InterruptedException {
-        waitForVisibility(under10Appliciants,10);
+    public FilterPageSteps filterAsUnder10Applicants() {
+        waitFor(2);
         under10Appliciants.click();
         return this;
     }
 
     public void clickShowResultsButton() {
         showResultsButton.click();
-    }
-
-    public void clickFirstJob() {
-        //waitForVisibility(firstJob,10);
-        //waitForPageToLoad(20);
-        //System.out.println("address = " + firstJob.getAttribute("href"));
-        if (firstJob.isDisplayed()) {
-            System.out.println("if içinde");
-            firstJob.click();
-        }
     }
 }

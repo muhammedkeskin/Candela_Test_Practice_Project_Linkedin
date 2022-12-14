@@ -8,7 +8,7 @@ public class LoginPageSteps extends LoginPage {
         maximize();
         emailArea.sendKeys(email);
         passwordArea.sendKeys(password);
-        acceptAndJoin.click();
+        acceptAndJoinButton.click();
         waitForPageToLoad(60);
     }
 }

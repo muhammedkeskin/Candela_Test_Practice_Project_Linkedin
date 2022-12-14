@@ -19,6 +19,6 @@ public class LoginPage extends BrowserUtils {
     public WebElement passwordArea;
 
     @FindBy(css = ".sign-in-form__submit-button")
-    public WebElement acceptAndJoin;
+    public WebElement acceptAndJoinButton;
 
 }
