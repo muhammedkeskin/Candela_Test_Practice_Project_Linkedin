@@ -12,7 +12,6 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = "com/linkedin"
-        //tags = "@apply"
 )
 public class CukesRunner {
 }

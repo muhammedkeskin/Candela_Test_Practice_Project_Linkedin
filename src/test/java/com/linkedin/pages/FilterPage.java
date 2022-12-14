@@ -21,7 +21,7 @@ public class FilterPage extends BrowserUtils {
     @FindBy(css = "[for='advanced-filter-timePostedRange-r86400']")
     public WebElement Past24Hours;
 
-    @FindBy(xpath = "(//div[@class='artdeco-toggle artdeco-toggle--32dp artdeco-toggle--default ember-view'])[1]")
+    @FindBy(xpath = "(//div[@data-control-name='filter_detail_select'])[2]")
     public WebElement under10Appliciants;
 
     @FindBy(xpath = "//button[contains(@aria-label,'Apply current filters to show')]")
