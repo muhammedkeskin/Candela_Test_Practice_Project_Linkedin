@@ -23,7 +23,7 @@ Feature: Search Jobs
     And user navigate jobs page
     And user should should have to navigate to job page
     And user search for jobs which is "qa engineer"
-    And user fill location as "United States"
+    And user fill location as "Germany"
     When user filter results by past24Hours
     And user should see results are filtered by past24Hours
 
@@ -37,6 +37,6 @@ Feature: Search Jobs
     And user navigate jobs page
     And user should should have to navigate to job page
     And user search for jobs which is "qa engineer"
-    And user fill location as "United States"
+    And user fill location as "Germany"
     When user filter results by under10Applicants
     And user should see results are filtered under10Applicants
