@@ -1,4 +1,4 @@
-package com.linkedin;
+package com.linkedin.exaples;
 
 public class LocateToShadowRootElement2 {
 

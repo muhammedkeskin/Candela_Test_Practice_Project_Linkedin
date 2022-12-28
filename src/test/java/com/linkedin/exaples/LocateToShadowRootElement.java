@@ -1,4 +1,4 @@
-package com.linkedin;
+package com.linkedin.exaples;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,7 +18,5 @@ public class LocateToShadowRootElement {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         WebElement ele = (WebElement) jse.executeScript("return document.querySelector(\"#snacktime\").shadowRoot.querySelector(\"#tea\")");
-
-
     }
 }
